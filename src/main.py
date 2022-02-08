@@ -20,7 +20,7 @@ def main():
         for chr_name, chr_st in genome.items():
             for i in chr_st.search(read_seq):
                 ssam_record(sys.stdout,
-                            chr_name, read_name,
+                            read_name, chr_name,
                             i, f"{len(read_seq)}M",
                             read_seq)
 
